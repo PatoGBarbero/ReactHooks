@@ -4,7 +4,7 @@ import Lista from "./Lista";
 const FormTarea = () => {
   //logica
 
-  let tareasLS = JSON.parse(localStorage.getItem("tareasKey"));
+  let tareasLS = JSON.parse(localStorage.getItem("tareasKey")) || [];
 
   const [tareas, setTareas] = useState(tareasLS);
   const [tarea, setTarea] = useState("");
